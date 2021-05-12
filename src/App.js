@@ -1,10 +1,10 @@
-import Form from './components/Form'
+import Tabs from './components/Tabs'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Tabs />
     </div>
   );
 }
