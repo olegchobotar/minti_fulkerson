@@ -83,13 +83,23 @@ export default () => {
             result[name][finishName] = +vertex.weight;
         })
 
-        const calculatedPath = calculatePath(result)
+        const calculatedPath = calculatePath(result);
 
         setDistance(calculatedPath.distance);
         setPath(calculatedPath.path);
     }
 
+    const handleStartVertexChange = (event) => {
+        setPath([]);
+        setStartVertex(event.target.value);
+    }
+
+    const handleFinishVertexChange = event => {
+        setPath([]);
+        setFinishVertex(event.target.value);
+    }
     const hasRequiredVertices = startVertex && finishVertex;
+    const disableCalculationButton = !hasRequiredVertices && vertices.length < 2;
 
     const formattedPath = path.map(item => item === 'start' ? startVertex : item === 'finish' ? finishVertex : item)
 
@@ -99,17 +109,11 @@ export default () => {
                 <div style={{ marginBottom: '2rem' }}>
                     <FormControl className={classes.formControl}>
                         <InputLabel htmlFor="pointName">Початкова точка</InputLabel>
-                        <Input aria-describedby="my-helper-text" onChange={event => {
-                            setPath([]);
-                            setStartVertex(event.target.value);
-                        }} />
+                        <Input aria-describedby="my-helper-text" onChange={handleStartVertexChange} />
                     </FormControl>
                     <FormControl className={classes.formControl}>
                         <InputLabel htmlFor="pointName">Кінцева точка</InputLabel>
-                        <Input aria-describedby="my-helper-text" onChange={event => {
-                            setPath([]);
-                            setFinishVertex(event.target.value);
-                        }}/>
+                        <Input aria-describedby="my-helper-text" onChange={handleFinishVertexChange}/>
                     </FormControl>
                 </div>
                 {vertices.map((vertex, index) => vertex && (
@@ -137,7 +141,14 @@ export default () => {
                         )}
                     </div>
                 ))}
-                <Button variant="contained" color="primary" onClick={handleCalculateClick}>Розрахувати</Button>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    disabled={disableCalculationButton}
+                    onClick={handleCalculateClick}
+                >
+                    Розрахувати
+                </Button>
                 <div style={{ marginTop: '2rem' }}>
                     {path.length > 0 && (
                        <>

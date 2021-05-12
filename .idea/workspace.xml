@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/calculatePath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Implement calculation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +55,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620757222189</updated>
-      <workItem from="1620757227095" duration="9580000" />
+      <workItem from="1620757227095" duration="10359000" />
+      <workItem from="1620839761244" duration="700000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement calculation">
+      <created>1620767044328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620767044328</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +81,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement calculation" />
   </component>
 </project>
