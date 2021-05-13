@@ -30,31 +30,41 @@ export default () => {
     const [minCut, setMinCut] = useState([]);
 
     const addNewVertex = () => {
+        resetResult();
         setVertices([
             ...vertices,
             emptyVertex
         ])
     }
 
+    const resetResult = () => {
+        setMinCut([]);
+        setMaxFlow(null);
+    }
+
     const updateVertexStart = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].start = event.target.value;
         setVertices(newVertices);
     }
 
     const updateVertexFinish = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].finish = event.target.value;
         setVertices(newVertices);
     }
 
     const updateVertexWeight = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].weight = event.target.value;
         setVertices(newVertices);
     }
 
     const removeVertex = (index) => {
+        resetResult();
         const newVertices = vertices.map((vertex, key) => key !== index ? vertex : null);
         setVertices(newVertices);
     }
@@ -67,11 +77,13 @@ export default () => {
     }
 
     const handleStartVertexChange = (event) => {
+        resetResult();
         setMaxFlow(null);
         setStartVertex(event.target.value);
     }
 
     const handleFinishVertexChange = event => {
+        resetResult();
         setMaxFlow(null);
         setFinishVertex(event.target.value);
     }

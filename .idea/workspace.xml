@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Add graph">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Update">
       <change beforePath="$PROJECT_DIR$/src/components/FulkersonForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FulkersonForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MintiForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MintiForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <updated>1620757222189</updated>
       <workItem from="1620757227095" duration="10359000" />
       <workItem from="1620839761244" duration="4624000" />
-      <workItem from="1620913804073" duration="7120000" />
+      <workItem from="1620913804073" duration="7477000" />
     </task>
     <task id="LOCAL-00001" summary="Implement calculation">
       <created>1620767044328</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620925337916</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1620926796195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620926796195</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +123,7 @@
     <MESSAGE value="Add validation for button" />
     <MESSAGE value="Add ford-fulkerson method" />
     <MESSAGE value="Add graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add graph" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
