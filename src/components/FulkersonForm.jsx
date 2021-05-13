@@ -27,6 +27,7 @@ export default () => {
     const [finishVertex, setFinishVertex] = useState(null);
     const [vertices, setVertices] = useState([emptyVertex]);
     const [maxFlow, setMaxFlow] = useState(null);
+    const [minCut, setMinCut] = useState([]);
 
     const addNewVertex = () => {
         setVertices([
@@ -60,9 +61,9 @@ export default () => {
 
     const handleCalculateClick = () => {
         const filteredVertices = filterVertices(vertices);
-
         const maxFlow = calculateMaxFlow(startVertex, finishVertex, filteredVertices)
         setMaxFlow(maxFlow.flow)
+        setMinCut(Array.from(maxFlow.cut))
     }
 
     const handleStartVertexChange = (event) => {
@@ -127,6 +128,7 @@ export default () => {
                     {maxFlow && (
                        <>
                            <InputLabel>Максимальний потік - {maxFlow}</InputLabel>
+                           <InputLabel>Мінімальний переріз - ({minCut.map(item => item.join(', ')).join(')(')})</InputLabel>
                        </>
                     )}
                 </div>

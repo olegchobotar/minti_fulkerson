@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Add ford-fulkerson method">
-      <change afterPath="$PROJECT_DIR$/src/components/Graph.jsx" afterDir="false" />
+    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Add graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FulkersonForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FulkersonForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MintiForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MintiForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/fordFulkerson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/fordFulkerson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <updated>1620757222189</updated>
       <workItem from="1620757227095" duration="10359000" />
       <workItem from="1620839761244" duration="4624000" />
-      <workItem from="1620913804073" duration="5741000" />
+      <workItem from="1620913804073" duration="7120000" />
     </task>
     <task id="LOCAL-00001" summary="Implement calculation">
       <created>1620767044328</created>
@@ -92,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620854976310</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add graph">
+      <created>1620925337916</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620925337916</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +115,7 @@
     <MESSAGE value="Implement calculation" />
     <MESSAGE value="Add validation for button" />
     <MESSAGE value="Add ford-fulkerson method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ford-fulkerson method" />
+    <MESSAGE value="Add graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add graph" />
   </component>
 </project>
