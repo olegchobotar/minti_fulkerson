@@ -432,9 +432,9 @@ function FordFulkerson(G, src, sink) {
     }
     ;
 
-    return { flow, cut }
     console.log("MAX FLOW:", flow);
     console.log("MIN CUT", cut);
+    return { flow, cut }
 };
 
 export const calculateMaxFlow = (startVertex, finishVertex, vertices) => {
@@ -451,7 +451,8 @@ export const calculateMaxFlow = (startVertex, finishVertex, vertices) => {
     return FordFulkerson(graph, startVertex, finishVertex);
 }
 
-const getNodeNames = (startVertex, finishVertex, vertices) => {
-    const nodeNames = vertices.map(vertex => vertex.start);
-    return new Set([startVertex, finishVertex, ...nodeNames])
+export const getNodeNames = (startVertex, finishVertex, vertices) => {
+    const nodeStartNames = vertices.map(vertex => vertex.start);
+    const nodeFinishNames = vertices.map(vertex => vertex.finish);
+    return new Set([startVertex, finishVertex, ...nodeStartNames, ...nodeFinishNames])
 }

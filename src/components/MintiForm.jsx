@@ -5,6 +5,8 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import { InputLabel, Input, IconButton, Button } from '@material-ui/core';
 import calculatePath from '../helpers/calculatePath';
+import Graph from './Graph'
+import { getNodeNames } from "../helpers/fordFulkerson";
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -28,7 +30,13 @@ export default () => {
     const [distance, setDistance] = useState(null);
     const [path, setPath] = useState([]);
 
+    const resetResult = () => {
+        setDistance(null);
+        setPath([]);
+    }
+
     const addNewVertex = () => {
+        resetResult();
         setVertices([
             ...vertices,
             emptyVertex
@@ -46,24 +54,28 @@ export default () => {
     }
 
     const updateVertexStart = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].start = event.target.value;
         setVertices(newVertices);
     }
 
     const updateVertexFinish = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].finish = event.target.value;
         setVertices(newVertices);
     }
 
     const updateVertexWeight = (index, event) => {
+        resetResult();
         const newVertices = [...vertices];
         newVertices[index].weight = event.target.value;
         setVertices(newVertices);
     }
 
     const removeVertex = (index) => {
+        resetResult();
         const newVertices = vertices.map((vertex, key) => key !== index ? vertex : null);
         setVertices(newVertices);
     }
@@ -91,17 +103,18 @@ export default () => {
     }
 
     const handleStartVertexChange = (event) => {
+        resetResult();
         setPath([]);
         setStartVertex(event.target.value);
     }
 
     const handleFinishVertexChange = event => {
+        resetResult();
         setPath([]);
         setFinishVertex(event.target.value);
     }
     const hasRequiredVertices = startVertex && finishVertex;
     const disableCalculationButton = !hasRequiredVertices || filterVertices(vertices).length < 1;
-
     const formattedPath = path.map(item => item === 'start' ? startVertex : item === 'finish' ? finishVertex : item)
 
     return (
@@ -158,6 +171,12 @@ export default () => {
                     )}
                 </div>
             </div>
+            {path.length > 0 && (
+                <Graph
+                    nodes={getNodeNames(startVertex, finishVertex, filterVertices(vertices))}
+                    vertices={filterVertices(vertices)}
+                />
+            )}
         </div>
     )
 }
