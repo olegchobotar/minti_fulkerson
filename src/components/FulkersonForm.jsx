@@ -4,7 +4,8 @@ import FormControl from '@material-ui/core/FormControl';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import { InputLabel, Input, IconButton, Button } from '@material-ui/core';
-import { calculateMaxFlow } from '../helpers/fordFulkerson';
+import { calculateMaxFlow, getNodeNames } from '../helpers/fordFulkerson';
+import Graph from "./Graph";
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -130,6 +131,12 @@ export default () => {
                     )}
                 </div>
             </div>
+            {maxFlow && (
+                <Graph
+                    nodes={getNodeNames(startVertex, finishVertex, filterVertices(vertices))}
+                    vertices={filterVertices(vertices)}
+                />
+            )}
         </div>
     )
 }

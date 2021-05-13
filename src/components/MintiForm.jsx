@@ -5,6 +5,8 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import { InputLabel, Input, IconButton, Button } from '@material-ui/core';
 import calculatePath from '../helpers/calculatePath';
+import Graph from './Graph'
+import { getNodeNames } from "../helpers/fordFulkerson";
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -101,7 +103,7 @@ export default () => {
     }
     const hasRequiredVertices = startVertex && finishVertex;
     const disableCalculationButton = !hasRequiredVertices || filterVertices(vertices).length < 1;
-
+    const readyVertices = filterVertices(vertices);
     const formattedPath = path.map(item => item === 'start' ? startVertex : item === 'finish' ? finishVertex : item)
 
     return (
@@ -158,6 +160,12 @@ export default () => {
                     )}
                 </div>
             </div>
+            {path.length > 0 && (
+                <Graph
+                    nodes={getNodeNames(startVertex, finishVertex, filterVertices(vertices))}
+                    vertices={filterVertices(vertices)}
+                />
+            )}
         </div>
     )
 }
