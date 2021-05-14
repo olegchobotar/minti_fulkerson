@@ -25,6 +25,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -36,7 +37,7 @@
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+      <package-json value="$PROJECT_DIR$/../minti_fulkerson/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -62,7 +63,7 @@
       <workItem from="1620757227095" duration="10359000" />
       <workItem from="1620839761244" duration="4624000" />
       <workItem from="1620913804073" duration="7728000" />
-      <workItem from="1621012076034" duration="1213000" />
+      <workItem from="1621012076034" duration="2003000" />
     </task>
     <task id="LOCAL-00001" summary="Implement calculation">
       <created>1620767044328</created>

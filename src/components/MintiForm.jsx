@@ -142,7 +142,7 @@ export default () => {
                         </FormControl>
                         <FormControl className={classes.formControl} disabled={!hasRequiredVertices}>
                             <InputLabel>Вага</InputLabel>
-                            <Input aria-describedby="my-helper-text" onChange={event => updateVertexWeight(index, event)} />
+                            <Input type="number" aria-describedby="my-helper-text" onChange={event => updateVertexWeight(index, event)} />
                         </FormControl>
                         {vertices.length - 1 === index ? (
                             <IconButton size="medium" onClick={addNewVertex} disabled={!vertex.start || !vertex.finish || !vertex.weight}>
