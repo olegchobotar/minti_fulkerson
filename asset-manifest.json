@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/minti_fulkerson/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/minti_fulkerson/static/js/main.6570f28a.chunk.js",
-    "main.js.map": "/minti_fulkerson/static/js/main.6570f28a.chunk.js.map",
+    "main.js": "/minti_fulkerson/static/js/main.9298c2d3.chunk.js",
+    "main.js.map": "/minti_fulkerson/static/js/main.9298c2d3.chunk.js.map",
     "runtime-main.js": "/minti_fulkerson/static/js/runtime-main.e1c57fb2.js",
     "runtime-main.js.map": "/minti_fulkerson/static/js/runtime-main.e1c57fb2.js.map",
     "static/js/2.20fcbd63.chunk.js": "/minti_fulkerson/static/js/2.20fcbd63.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e1c57fb2.js",
     "static/js/2.20fcbd63.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.6570f28a.chunk.js"
+    "static/js/main.9298c2d3.chunk.js"
   ]
 }
