@@ -1,6 +1,6 @@
 {
   "name": "minti_fulkerson",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://olegchobotar.github.io/minti_fulkerson",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
