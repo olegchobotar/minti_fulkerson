@@ -41,9 +41,6 @@
     "type": "git",
     "url": "https://github.com/olegchobotar/minti_fulkerson.git"
   },
-  "publishConfig": {
-    "registry": "https://www.npmjs.com/package/minti_fulkerson"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
