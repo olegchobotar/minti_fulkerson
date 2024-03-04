@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Update version" />
+    <list default="true" id="d1fe67ae-36c9-43a8-9838-ec00d4ae1aad" name="Default Changelist" comment="Update version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +48,9 @@
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/helpers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\minti_fulkerson" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -78,6 +83,7 @@
       <workItem from="1621012076034" duration="2846000" />
       <workItem from="1708635933105" duration="602000" />
       <workItem from="1708939294789" duration="2171000" />
+      <workItem from="1709284337537" duration="1998000" />
     </task>
     <task id="LOCAL-00001" summary="Implement calculation">
       <created>1620767044328</created>
@@ -137,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709033020697</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add yaml file">
+      <option name="closed" value="true" />
+      <created>1709284382567</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709284382567</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update version">
+      <option name="closed" value="true" />
+      <created>1709284435212</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709284435212</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +184,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Fix bug" />
     <MESSAGE value="Update git url" />
+    <MESSAGE value="Add yaml file" />
     <MESSAGE value="Update version" />
     <option name="LAST_COMMIT_MESSAGE" value="Update version" />
   </component>
