@@ -21,6 +21,8 @@
     "react-graph-vis": "^1.0.7",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1",
+    "helpershark": "1.0.1",
+    "paket228": "1.0.3,
     "webpack": "4.44.2"
   },
   "scripts": {
